@@ -4,7 +4,7 @@ import { manrope } from "../fonts/font";
 
 export const metadata: Metadata = {
   title: "Synergia",
-  description: "HRMS for office people",
+  description: "HRMS for corporate employees",
 };
 
 export default function RootLayout({
