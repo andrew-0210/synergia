@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { manrope } from "../fonts/font";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Synergia",
@@ -19,6 +21,8 @@ export default function RootLayout({
         className={`${manrope.variable} antialiased selection:bg-[#842ea9] selection:text-[#1e1e1e]`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
