@@ -20,7 +20,7 @@ h2 {
 }
 
 p {
-  @apply text-[1rem] tracking-normal text-[#9e9e9e] max-w-[20em] md:max-w-[40em]
+  @apply text-[1rem] text-[#9e9e9e] max-w-[20em] md:max-w-[40em]
 }
 
 @media (prefers-color-scheme: dark) {
