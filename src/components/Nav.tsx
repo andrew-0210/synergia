@@ -94,7 +94,7 @@ const Nav = () => {
               <li
                 key={link.id}
                 onClick={() => setOpenMenu(false)}
-                className="text-[0.875rem]"
+                className="text-[0.875rem] font-medium"
               >
                 <Link
                   href={link.href}

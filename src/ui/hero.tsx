@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="relative">
       <div className="absolute top-0 z-[-2] h-screen w-full bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
       <div className="absolute inset-0 z-[-1] h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,transparent_50%,#9a6aff_100%)]"></div>
-      <section className="container relative flex h-screen flex-col items-center justify-start gap-[1rem] py-[9rem]">
+      <section className="container flex h-screen flex-col items-center justify-start gap-[1rem] py-[9rem]">
         <h1>
           A{" "}
           <span className="rounded-lg border-l-2 border-[#b4e251] bg-gradient-to-r from-[#5b7229] to-transparent px-[0.5rem] text-[#b4e251]">

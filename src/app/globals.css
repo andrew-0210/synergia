@@ -8,7 +8,17 @@
 }
 
 * {
-  font-family: var(--font-manrope);
+  font-family: var(--gilroy-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: var(--bricolage-font);
 }
 
 h1 {
@@ -20,7 +30,7 @@ h2 {
 }
 
 p {
-  @apply text-[1rem] text-[#9e9e9e] md:max-w-[40em]
+  @apply text-[1rem] text-[#9e9e9e] md:max-w-[40em] font-normal
 }
 
 @media (prefers-color-scheme: dark) {
