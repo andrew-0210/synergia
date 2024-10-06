@@ -1,7 +1,15 @@
+"use client";
+
 import Button from "@/components/Button";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Hero = () => {
+  const router = useRouter();
+
+  const handleSignUp = () => {
+    router.push("/signup");
+  };
   return (
     <div className="relative">
       <div className="absolute top-0 z-[-2] h-screen w-full bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
@@ -18,7 +26,9 @@ const Hero = () => {
           From seamless recruitment to effortless payroll and performance
           management, Synergia simplifies every aspect of HR for growing teams.
         </p>
-        <Button intent="secondary">Get Started</Button>
+        <Button intent="secondary" onClick={handleSignUp}>
+          Get Started
+        </Button>
       </section>
     </div>
   );
