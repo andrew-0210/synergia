@@ -12,7 +12,7 @@
 }
 
 h1 {
-  @apply text-[2.25rem] md:text-[3rem] tracking-tight font-semibold leading-[1.2] text-center
+  @apply text-[2.25rem] md:text-[3rem] tracking-tight font-semibold leading-[1.2] text-center md:max-w-[10em]
 }
 
 h2 {
@@ -20,7 +20,7 @@ h2 {
 }
 
 p {
-  @apply text-[1rem] text-[#9e9e9e] max-w-[20em] md:max-w-[40em]
+  @apply text-[1rem] text-[#9e9e9e] md:max-w-[40em]
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +43,6 @@ body {
 
 
   .container {
-    @apply lg:max-w-[90em] mx-auto
+    @apply lg:max-w-[90em] mx-auto px-[1rem]
   }
 }

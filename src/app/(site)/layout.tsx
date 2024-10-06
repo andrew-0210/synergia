@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} antialiased selection:bg-[#842ea9] selection:text-[#1e1e1e]`}
+        className={`${manrope.variable} antialiased selection:bg-[#c6fe4e] selection:text-[#1e1e1e]`}
       >
         <Nav />
         {children}

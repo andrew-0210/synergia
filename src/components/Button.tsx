@@ -7,15 +7,15 @@ type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
   btnType?: "icon" | "button";
 };
 
-const button = cva("lg:py-[0.5rem] px-[2rem] rounded-lg py-[0.75rem]", {
+const button = cva("lg:py-[0.5rem] px-[1rem] rounded-lg py-[0.75rem]", {
   variants: {
     intent: {
       primary:
         "bg-[#9a6aff] font-semibold tracking-tight border border-[#cbb2ff] text-[#f5f5f5] ",
       secondary:
-        "bg-gradient-to-tr from-[#1b1b1b] via-[#3333333] to-[#1b1b1b] font-semibold tracking-tight border border-[#414141] text-[#f5f5f5] ",
+        "bg-[#1b1b1b] font-semibold tracking-tight border border-[#414141] text-[#f5f5f5] ",
     },
-    size: { default: "min-w-[183px]" },
+    size: { default: "min-w-[120px]" },
     btnType: {
       button: "",
       icon: "px-0 rounded-lg py-0",

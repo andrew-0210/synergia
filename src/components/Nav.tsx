@@ -51,10 +51,10 @@ const Nav = () => {
     <header
       className={` ${
         openMenu ? "bg-[#000000]" : ""
-      } fixed mx-auto w-full bg-gradient-to-b from-[#000000] to-transparent px-[1rem] py-[1rem] sm:px-[3rem]`}
+      } fixed z-50 mx-auto w-full bg-gradient-to-b from-[#000000] to-transparent px-[1rem] py-[1rem] sm:px-[2rem]`}
     >
       <nav
-        className={`${openMenu ? "h-screen flex-col justify-between gap-4 bg-[#000000] transition-all duration-500 ease-out" : "flex items-center justify-between gap-4"} mx-auto rounded-lg px-[0.5rem] backdrop-blur-sm md:p-2 lg:max-w-[1194px]`}
+        className={`${openMenu ? "h-screen flex-col gap-4 bg-[#000000] duration-500 ease-out" : "flex items-center justify-between gap-4"} mx-auto rounded-lg px-[0.5rem] backdrop-blur-sm md:p-2 lg:max-w-[90em]`}
       >
         <div className="flex w-full items-center justify-between lg:w-auto">
           <Link href="/" onClick={() => setOpenMenu(false)}>
@@ -82,7 +82,7 @@ const Nav = () => {
           className={
             openMenu
               ? "flex flex-col gap-4 py-[2rem] lg:hidden"
-              : "hidden gap-4 lg:flex"
+              : "hidden gap-4 lg:flex lg:flex-1"
           }
         >
           {links.map((link) => {
@@ -91,7 +91,11 @@ const Nav = () => {
                 ? pathname === link.href
                 : pathname.startsWith(link.href);
             return (
-              <li key={link.id} onClick={() => setOpenMenu(false)}>
+              <li
+                key={link.id}
+                onClick={() => setOpenMenu(false)}
+                className="text-[0.875rem]"
+              >
                 <Link
                   href={link.href}
                   className={isActive ? "font-semibold text-[#b4e251]" : " "}
@@ -106,15 +110,25 @@ const Nav = () => {
         <div
           className={
             openMenu
-              ? "flex flex-1 flex-grow flex-col gap-4 py-[2rem] lg:hidden"
-              : "hidden gap-4 lg:flex"
+              ? "flex flex-col gap-4 py-[2rem] sm:flex-row lg:hidden"
+              : "hidden gap-2 lg:flex"
           }
         >
-          <Button intent="secondary" size="default" onClick={handleLogin}>
+          <Button
+            intent="secondary"
+            size="default"
+            onClick={handleLogin}
+            className="flex-1"
+          >
             Login
           </Button>
-          <Button intent="primary" size="default" onClick={handleSignUp}>
-            Get Started
+          <Button
+            intent="primary"
+            size="default"
+            onClick={handleSignUp}
+            className="flex-1"
+          >
+            Sign Up
           </Button>
         </div>
       </nav>
