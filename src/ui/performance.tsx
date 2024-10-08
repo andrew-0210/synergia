@@ -2,7 +2,7 @@ import React from "react";
 
 const Performance = () => {
   return (
-    <section className="container flex h-screen flex-col items-center justify-start gap-[1rem] px-[1rem] py-[9rem]">
+    <section className="container flex h-screen flex-col items-center justify-start gap-[1rem] px-[1rem] py-[9rem] selection:bg-[#9a6aff] selection:text-[#fafafa]">
       <p className="font-semibold uppercase tracking-[8px] text-[#9a6aff]">
         Performance
       </p>
