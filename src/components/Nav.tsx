@@ -50,7 +50,7 @@ const Nav = () => {
   return (
     <header
       className={` ${
-        openMenu ? "bg-[#000000]" : ""
+        openMenu ? "bg-[#000000]/80 backdrop-blur-sm" : ""
       } fixed z-50 mx-auto w-full bg-gradient-to-b from-[#000000] to-transparent px-[1rem] py-[1rem] sm:px-[2rem] backdrop-blur-sm`}
     >
       <nav
