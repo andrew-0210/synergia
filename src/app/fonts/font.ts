@@ -1,4 +1,12 @@
 import localFont from "next/font/local";
+import {Manrope} from "next/font/google";
+
+export const manrope = Manrope({
+subsets:['latin'],
+  weight:['200','300','500','600','800'],
+   variable: '--manrope-font'
+})
+
 
 export const bricolage = localFont({
   src: [
