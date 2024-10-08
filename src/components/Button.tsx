@@ -11,9 +11,9 @@ const button = cva("lg:py-[0.5rem] px-[1rem] rounded-lg py-[0.75rem]", {
   variants: {
     intent: {
       primary:
-        "bg-[#9a6aff] font-medium tracking-normal border border-[#cbb2ff] text-[#f5f5f5] ",
+        "bg-[#9a6aff] font-medium tracking-normal border border-[#cbb2ff] text-[#f5f5f5] leading-none",
       secondary:
-        "bg-[#1b1b1b] font-medium tracking-normal border border-[#414141] text-[#f5f5f5] ",
+        "bg-[#1b1b1b] font-medium tracking-normal border border-[#414141] text-[#f5f5f5] leading-none",
     },
     size: { default: "min-w-[120px]" },
     btnType: {
