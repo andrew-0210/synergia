@@ -51,10 +51,10 @@ const Nav = () => {
     <header
       className={` ${
         openMenu ? "bg-[#000000]" : ""
-      } fixed z-50 mx-auto w-full bg-gradient-to-b from-[#000000] to-transparent px-[1rem] py-[1rem] sm:px-[2rem]`}
+      } fixed z-50 mx-auto w-full bg-gradient-to-b from-[#000000] to-transparent px-[1rem] py-[1rem] sm:px-[2rem] backdrop-blur-sm`}
     >
       <nav
-        className={`${openMenu ? "h-screen flex-col gap-4 bg-[#000000] duration-500 ease-out" : "flex items-center justify-between gap-4"} mx-auto rounded-lg px-[0.5rem] backdrop-blur-sm md:p-2 lg:max-w-[90em]`}
+        className={`${openMenu ? "h-screen flex-col gap-4 bg-[#000000] duration-500 ease-out" : "flex items-center justify-between gap-4"} mx-auto rounded-lg px-[0.5rem] md:p-2 lg:max-w-[90em]`}
       >
         <div className="flex w-full items-center justify-between lg:w-auto">
           <Link href="/" onClick={() => setOpenMenu(false)}>
