@@ -38,7 +38,7 @@ const Nav = () => {
   };
 
   const handleSignUp = () => {
-    router.push("/signup");
+    router.push("/login");
   };
 
   const pathname = usePathname();
@@ -50,8 +50,8 @@ const Nav = () => {
   return (
     <header
       className={` ${
-        openMenu ? "bg-[#000000]/80 backdrop-blur-sm" : ""
-      } fixed z-50 mx-auto w-full bg-gradient-to-b from-[#000000] to-transparent px-[1rem] py-[1rem] sm:px-[2rem] backdrop-blur-sm`}
+        openMenu ? "bg-[#000000] backdrop-blur-sm" : ""
+      } fixed z-50 mx-auto w-full bg-gradient-to-b from-[#000000] to-transparent px-[1rem] py-[1rem] backdrop-blur-sm sm:px-[2rem]`}
     >
       <nav
         className={`${openMenu ? "h-screen flex-col gap-4 bg-[#000000] duration-500 ease-out" : "flex items-center justify-between gap-4"} mx-auto rounded-lg px-[0.5rem] md:p-2 lg:max-w-[90em]`}
@@ -116,7 +116,7 @@ const Nav = () => {
         >
           <Button
             intent="secondary"
-            size="default"
+            size="medium"
             onClick={handleLogin}
             className="flex-1"
           >
@@ -124,9 +124,9 @@ const Nav = () => {
           </Button>
           <Button
             intent="primary"
-            size="default"
+            size="medium"
             onClick={handleSignUp}
-            className="flex-1"
+            className="hidden flex-1"
           >
             Sign Up
           </Button>

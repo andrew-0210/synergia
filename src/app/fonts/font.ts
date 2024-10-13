@@ -1,47 +1,51 @@
 import localFont from "next/font/local";
-import {Manrope} from "next/font/google";
+import { Manrope } from "next/font/google";
 
 export const manrope = Manrope({
-subsets:['latin'],
-  weight:['300','400','700','500','600','800'],
-   variable: '--manrope-font'
-})
+  subsets: ["latin"],
+  weight: ["300", "400", "700", "500", "600", "800"],
+  variable: "--manrope-font",
+});
 
-
-export const bricolage = localFont({
+export const denton = localFont({
   src: [
     {
-      path: "./bricolage/BricolageGrotesque-Light.ttf",
-      weight: "200",
+      path: "./denton/Denton Thin 100.otf",
+      weight: "100",
       style: "normal",
     },
     {
-      path: "./bricolage/BricolageGrotesque-Regular.ttf",
+      path: "./denton/Denton Light 300.otf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "./bricolage/BricolageGrotesque-Medium.ttf",
+      path: "./denton/Denton Regular 400.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./bricolage/BricolageGrotesque-SemiBold.ttf",
+      path: "./denton/Denton Medium 500.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./bricolage/BricolageGrotesque-Bold.ttf",
+      path: "./denton/Denton Bold 700.otf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "./bricolage/BricolageGrotesque-ExtraBold.ttf",
+      path: "./denton/Denton ExtraBold 800.otf",
       weight: "800",
       style: "normal",
     },
+    {
+      path: "./denton/Denton Black 900.otf",
+      weight: "900",
+      style: "normal",
+    },
   ],
-  variable: "--bricolage-font",
+  variable: "--denton-font",
 });
 export const gilroy = localFont({
   src: [

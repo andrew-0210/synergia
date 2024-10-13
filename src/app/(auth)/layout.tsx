@@ -1,6 +1,6 @@
 import "../globals.css";
 import type { Metadata } from "next";
-import { gilroy, bricolage } from "../fonts/font";
+import { manrope, denton } from "../fonts/font";
 
 export const metadata: Metadata = {
   title: "Synergia",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${gilroy.variable} ${bricolage.variable}`}>
+      <body className={`${manrope.variable} ${denton.variable}`}>
         {children}
       </body>
     </html>

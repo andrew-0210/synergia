@@ -8,7 +8,7 @@
 }
 
 * {
-  font-family: var(--gilroy-font);
+  font-family: var(--manrope-font);
 }
 
 h1,
@@ -18,19 +18,19 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--bricolage-font);
+  font-family: var(--denton-font);
 }
 
-button{
+button {
   font-family: var(--manrope-font);
 }
 
 h1 {
-  @apply text-[2.25rem] md:text-[3rem] tracking-tight font-semibold leading-[1.2] text-center md:max-w-[10em]
+  @apply text-[2.25rem] md:text-[3rem] tracking-normal leading-[1.2] md:max-w-[10em]
 }
 
 h2 {
-  @apply text-[1.75rem] md:text-[2.5rem] leading-[1.25] font-semibold
+  @apply text-[1.75rem] md:text-[2.5rem] leading-[1.25]
 }
 
 p {

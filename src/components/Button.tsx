@@ -3,19 +3,19 @@ import { twMerge } from "tailwind-merge";
 
 type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
   intent?: "primary" | "secondary";
-  size?: "default";
+  size?: "medium";
   btnType?: "icon" | "button";
 };
 
-const button = cva("lg:py-[0.875rem] px-[1rem] rounded-lg py-[0.875rem]", {
+const button = cva("", {
   variants: {
     intent: {
       primary:
-        "bg-[#9a6aff] font-medium tracking-normal border border-[#cbb2ff] text-[#f5f5f5] leading-tight",
+        "bg-[#9a6aff] font-medium tracking-normal border border-[#cbb2ff] text-[#f5f5f5] leading-tight lg:py-[0.75rem] px-[1rem] rounded-lg py-[0.75rem]",
       secondary:
-        "bg-[#1b1b1b] font-medium tracking-normal border border-[#414141] text-[#f5f5f5] leading-tight",
+        "bg-[#1b1b1b] font-medium tracking-normal border border-[#414141] text-[#f5f5f5] leading-tight lg:py-[0.75rem] px-[1rem] rounded-lg py-[0.75rem]",
     },
-    size: { default: "min-w-[120px]" },
+    size: { medium: "min-w-[120px]" },
     btnType: {
       button: "",
       icon: "px-0 rounded-lg py-0",
@@ -24,13 +24,12 @@ const button = cva("lg:py-[0.875rem] px-[1rem] rounded-lg py-[0.875rem]", {
   compoundVariants: [
     {
       btnType: "icon",
-      size: "default",
       className: "h-10 w-10",
     },
   ],
   defaultVariants: {
     intent: "primary",
-    size: "default",
+    size: "medium",
     btnType: "button",
   },
 });
