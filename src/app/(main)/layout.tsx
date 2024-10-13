@@ -1,6 +1,7 @@
 import "../globals.css";
 import { manrope, denton } from "../fonts/font";
 import DashNav from "@/components/DashNav";
+import type { Metadata } from "next";
 
 export const metadata = {
   title: "Synergia-App",
