@@ -3,7 +3,7 @@ import { manrope, denton } from "../fonts/font";
 import DashNav from "@/components/DashNav";
 import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Synergia-App",
   description: "App",
 };
