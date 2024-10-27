@@ -1,11 +1,7 @@
 const Dashboard = () => {
   return (
-    <div className="flex flex-col items-center justify-start pt-[6rem] md:h-screen">
-      <h1 className="h-screen">Dashboard</h1>
-      <h1 className="h-screen md:hidden">Dashboard</h1>
-      <h1 className="h-screen md:hidden">Dashboard</h1>
-      <h1 className="h-screen md:hidden">Dashboard</h1>
-      <h1 className="h-screen md:hidden">Dashboard</h1>
+    <div className="flex flex-col items-center justify-start px-[1rem] pt-[6rem] md:h-screen md:px-[6rem]">
+      <h1>Dashboard</h1>
     </div>
   );
 };
