@@ -1,5 +1,5 @@
 import "../globals.css";
-import { manrope, denton } from "../fonts/font";
+import { manrope, syne } from "../fonts/font";
 import DashNav from "@/components/DashNav";
 import type { Metadata } from "next";
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${denton.variable} ${manrope.variable} antialiased`}>
+      <body className={`${syne.variable} ${manrope.variable} antialiased`}>
         {children}
         <DashNav />
       </body>
