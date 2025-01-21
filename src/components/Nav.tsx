@@ -58,7 +58,7 @@ const Nav = () => {
       >
         <div className="flex w-full items-center justify-between lg:w-auto">
           <Link href="/" onClick={() => setOpenMenu(false)}>
-            <div className="relative h-[3rem] w-[9rem] md:h-[3rem] md:w-[10rem]">
+            <div className="relative h-[3rem] w-[7rem] md:h-[3rem] md:w-[8rem]">
               <Image
                 src="/assets/logo_full.svg"
                 alt="Synergia_logo"

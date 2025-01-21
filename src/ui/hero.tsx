@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "@/components/Button";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -11,26 +12,37 @@ const Hero = () => {
     router.push("/login");
   };
   return (
-    <div className="relative">
-      <div className="absolute top-0 z-[-2] h-screen w-full bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
-      <div className="absolute inset-0 z-[-1] h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,transparent_50%,#9a6aff_100%)]" />
-      <section className="container flex h-screen flex-col items-center justify-start gap-[1rem] py-[9rem]">
-        <h1 className="text-center">
-          A{" "}
-          <span className="rounded-lg border-l-2 border-[#b4e251] bg-gradient-to-r from-[#5b7229] to-transparent px-[0.5rem] text-[#b4e251]">
-            versatile
-          </span>{" "}
-          all-in-one HRM powerhouse
-        </h1>
-        <p className="mb-[1rem] text-center">
-          From seamless recruitment to effortless payroll and performance
-          management, Synergia simplifies every aspect of HR for growing teams.
-        </p>
-        <Button intent="secondary" onClick={handleSignUp}>
-          Get Started
-        </Button>
+    <section className="relative h-[100dvh] md:h-full md:pt-[10rem]">
+      <section className="container flex h-[100dvh] flex-col items-center justify-center gap-[3rem]">
+        <div className="flex flex-col items-center justify-center gap-6">
+          <h3 className="sub-heading">Automated global employment platform</h3>
+          <h1>All your employment needs in one place.</h1>
+          <p className="text-center">
+            Work with great talent in 180+ countries without opening entities
+            and navigating complex local laws. Onboard, pay, manage and care for
+            full-timers and contractors - all with accurate and deep local
+            knowledge.
+          </p>
+          <div className="flex gap-4">
+            <Button intent="secondary" onClick={handleSignUp}>
+              Preview platform
+            </Button>
+            <Button intent="primary" onClick={handleSignUp}>
+              Get Started
+            </Button>
+          </div>
+        </div>
+        <div className="relative hidden w-[100%] sm:h-[30rem] md:block">
+          <Image
+            src="/assets/synergia_image.png"
+            alt="Synergia_image"
+            fill={true}
+            className="object-contain"
+          />
+        </div>
       </section>
-    </div>
+      <div className="absolute bottom-0 hidden w-full bg-gradient-to-t from-[#0c0c0c] to-transparent md:block md:h-[40vh]" />
+    </section>
   );
 };
 

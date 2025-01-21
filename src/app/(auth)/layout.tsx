@@ -1,6 +1,6 @@
 import "../globals.css";
 import type { Metadata } from "next";
-import { manrope, denton } from "../fonts/font";
+import { manrope, syne } from "../fonts/font";
 
 export const metadata: Metadata = {
   title: "Synergia-Login",
@@ -15,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${denton.variable}`}>
-        {children}
-      </body>
+      <body className={`${manrope.variable} ${syne.variable}`}>{children}</body>
     </html>
   );
 }

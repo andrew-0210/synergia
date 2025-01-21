@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import { gilroy, denton, manrope } from "../fonts/font";
+import { syne, manrope } from "../fonts/font";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Nav from "@/components/Nav";
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gilroy.variable} ${denton.variable} ${manrope.variable} antialiased selection:bg-[#c6fe4e] selection:text-[#1e1e1e]`}
+        className={`${syne.variable} ${manrope.variable} antialiased selection:bg-[#c6fe4e] selection:text-[#1e1e1e]`}
       >
         <Nav />
         {children}

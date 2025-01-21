@@ -11,11 +11,11 @@ const button = cva("", {
   variants: {
     intent: {
       primary:
-        "bg-[#9a6aff] font-medium tracking-normal border border-[#cbb2ff] text-[#f5f5f5] leading-tight lg:py-[0.75rem] px-[1rem] rounded-lg py-[0.75rem]",
+        "bg-[#ff5c33] font-medium tracking-normal border border-[#9c3015] text-[#f5f5f5] leading-tight lg:py-[0.75rem] px-[1rem] rounded-lg py-[0.75rem]",
       secondary:
         "bg-[#1b1b1b] font-medium tracking-normal border border-[#414141] text-[#f5f5f5] leading-tight lg:py-[0.75rem] px-[1rem] rounded-lg py-[0.75rem]",
     },
-    size: { medium: "min-w-[120px]" },
+    size: { medium: "min-w-[183px]" },
     btnType: {
       button: "",
       icon: "px-0 rounded-lg py-0",
