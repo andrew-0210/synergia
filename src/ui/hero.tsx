@@ -42,6 +42,8 @@ const Hero = () => {
         </div>
       </section>
       <div className="absolute bottom-0 hidden w-full bg-gradient-to-t from-[#0c0c0c] to-transparent md:block md:h-[40vh]" />
+      <div className="absolute top-[70%] -z-10 hidden h-[8rem] w-[16rem] rounded-full bg-[#6886d4] blur-[164px] md:block" />
+      <div className="absolute right-[20%] top-[70%] -z-10 hidden h-[8rem] w-[309px] rounded-full bg-[#6886d4] blur-[164px] md:block" />
     </section>
   );
 };
