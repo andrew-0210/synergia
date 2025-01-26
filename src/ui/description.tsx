@@ -1,8 +1,12 @@
 "use client";
 
 import Button from "@/components/Button";
+import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
+const paragraph =
+  "Synergia is a people enabler. From automation people processes to creating an engaged and driven culture, Synergia is all you need to build a good to great company.";
 
 const Description = () => {
   const router = useRouter();
@@ -97,12 +101,8 @@ const Description = () => {
           </div>
         </div>
       </div>
-      <div className="container flex items-center justify-center py-[7.5rem]">
-        <h2>
-          Synergia is a people enabler. From automation people processes to
-          creating an engaged and driven culture, Synergia is all you need to
-          build a good to great company.
-        </h2>
+      <div className="container flex flex-wrap justify-center py-[7.5rem]">
+        <Paragraph value={paragraph} />
       </div>
     </div>
   );
