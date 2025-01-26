@@ -37,7 +37,6 @@ const Paragraph = ({ value }) => {
   return (
     <motion.h2
       ref={element}
-      style={{ opacity: scrollYProgress }}
       className="flex flex-wrap justify-center leading-[1]"
     >
       {words.map((word, i) => {
