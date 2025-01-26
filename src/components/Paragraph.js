@@ -37,7 +37,7 @@ const Paragraph = ({ value }) => {
   return (
     <motion.h2
       ref={element}
-      className="flex flex-wrap justify-center leading-[1]"
+      className="flex flex-wrap justify-center leading-[0.8] md:leading-[1]"
     >
       {words.map((word, i) => {
         const start = i / words.length;
