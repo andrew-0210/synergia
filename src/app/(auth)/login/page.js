@@ -15,7 +15,7 @@ const Login = () => {
   const username = "admin";
   const hardCodedPassword = "password123";
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (username === username && password === hardCodedPassword) {
       setError("");
