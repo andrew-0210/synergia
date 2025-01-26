@@ -9,7 +9,7 @@ const Performance = () => {
           <h3 className="sub-heading">Performance</h3>
           <h2 className="text-center">Up to 3x faster hiring workflow</h2>
           <p className="text-center">
-            Hire 4x faster up to 90% with intelligent test selection and
+            Hire 3x faster up to 90% with intelligent test selection and
             caching. Powered by advanced instrumentation and call graph
             analysis.
           </p>
