@@ -25,7 +25,7 @@
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "motion/react";
 
-const Paragraph = ({ value }: any) => {
+const Paragraph = ({ value }) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
@@ -40,7 +40,7 @@ const Paragraph = ({ value }: any) => {
       style={{ opacity: scrollYProgress }}
       className="flex flex-wrap justify-center leading-[1]"
     >
-      {words.map((word: string, i: number) => {
+      {words.map((word, i) => {
         const start = i / words.length;
         const end = start + 1 / words.length;
         return (
@@ -55,7 +55,7 @@ const Paragraph = ({ value }: any) => {
 
 export default Paragraph;
 
-const Word = ({ children, range, progress }: any) => {
+const Word = ({ children, range, progress }) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
     <span className="relative mr-[8px] mt-[8px] md:mr-[12px]">

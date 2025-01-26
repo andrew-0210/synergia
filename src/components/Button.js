@@ -1,12 +1,6 @@
 import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
-type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
-  intent?: "primary" | "secondary";
-  size?: "medium";
-  btnType?: "icon" | "button";
-};
-
 const button = cva("", {
   variants: {
     intent: {
@@ -34,13 +28,7 @@ const button = cva("", {
   },
 });
 
-const Button = ({
-  intent,
-  size,
-  btnType,
-  className,
-  ...props
-}: ButtonProps) => {
+const Button = ({ intent, size, btnType, className, ...props }) => {
   return (
     <button
       className={twMerge(button({ intent, size, btnType, className }))}
